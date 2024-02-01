@@ -68,6 +68,16 @@
     width: auto;
 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    @media(max-width:590px){
+      .adjust{
+        font-size: 30px;
+      }
+    }
+    @media(max-width:400px){
+      .adjust{
+        font-size: 15px;
+      }
+    }
   }
 
   .tag-cmp {
