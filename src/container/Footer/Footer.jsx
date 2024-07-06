@@ -32,7 +32,13 @@ const Footer = () => {
         setLoading(false);
         setIsFormSubmitted(true);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log("battle",client.config())
+        console.log('Sanity Project ID:', process.env.REACT_APP_SANITY_PROJECT_ID);
+console.log('Sanity Token:', process.env.REACT_APP_SANITY_TOKEN);
+
+      
+        console.log(err)});
   };
 
   return (
@@ -42,11 +48,11 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:hello@micael.com" className="p-text">hello@micael.com</a>
+          <a href="mailto:chinecheremubawike@gmail.com" className="p-text">chinecheremubawike@gmail.com</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
+          <a href="tel:+2349039030524" className="p-text">+2349039030524</a>
         </div>
       </div>
       {!isFormSubmitted ? (
