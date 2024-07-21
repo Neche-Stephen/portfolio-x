@@ -43,7 +43,7 @@ console.log('Sanity Token:', process.env.REACT_APP_SANITY_TOKEN);
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text">Contact me</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
